@@ -7,6 +7,11 @@ app.use(express.json());
 // In-memory user store
 const users = [];
 
+// Basic route
+app.get('/', (req, res) => {
+  res.send('Hello from Express backend!');
+});
+
 // Signup route
 app.post('/signup', (req, res) => {
   const { username, password } = req.body;
@@ -30,7 +35,7 @@ app.post('/signup', (req, res) => {
 
 // Login route
 app.post('/login', (req, res) => {
-  const { username, password } = req.body;
+  const { userName, password } = req.body;
 
   // Basic validation
   if (!username || !password) {
