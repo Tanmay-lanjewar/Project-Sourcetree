@@ -1,0 +1,7 @@
+diff a/style.css b/style.css	(rejected hunks)
+@@ -0,0 +1,4 @@
++*{
++margin: 0px;
++padding: 0px;
++}
+\ No newline at end of file
